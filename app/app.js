@@ -1,3 +1,3 @@
 define([], function () {
-  alert('hoi!');
+  alert('hoi!')
 });
