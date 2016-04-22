@@ -26,5 +26,8 @@
   "devDependencies": {
     "electron-prebuilt": "^0.37.0",
     "jshint": "^2.9.2"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3"
   }
 }
