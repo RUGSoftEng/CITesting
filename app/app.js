@@ -1,7 +1,8 @@
 define(['jquery'], function ($) {
   function doSetUp(){
     $('#loginForm').submit(function(){
-        console.log('submit!');
+        $('#name').text("Piet");
+        return false;
     });
   }
 
