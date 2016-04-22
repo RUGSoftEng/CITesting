@@ -1,9 +1,13 @@
 define([], function () {
 
-  function addTwo(otherTerm){
-    result = otherTerm + 2;
+  function moveTwo(otherTerm){
+    if(otherTerm < 0) result = otherTerm -2;
+    else result = otherTerm + 2;
     return result;
   }
 
-  alert('hoi! ' + addTwo(3))
+  return {
+    moveTwo: moveTwo,
+  };
+
 });
