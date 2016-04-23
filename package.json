@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron main.js",
     "pretest": "./node_modules/jshint/bin/jshint ./tests/*.js && ./node_modules/jshint/bin/jshint ./app/*.js",
-    "test": "./node_modules/.bin/intern-client config=tests/intern"
+    "test": "./node_modules/.bin/intern-client config=tests/intern && ./node_modules/.bin/intern-runner config=tests/intern"
   },
   "repository": {
     "type": "git",
