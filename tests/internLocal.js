@@ -9,9 +9,9 @@ define({
 	//
 	// Note that the `build` capability will be filled in with the current commit ID or build tag from the CI
 	// environment automatically
-	capabilities: {
-		'browserstack.selenium_version': '2.45.0'
-	},
+	// capabilities: {
+	// 	'browserstack.selenium_version': '2.45.0'
+	// },
 
 	// Browsers to run integration testing against. Note that version numbers must be strings if used with Sauce
 	// OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
@@ -30,12 +30,7 @@ define({
 
 	// Name of the tunnel class to use for WebDriver tests.
 	// See <https://theintern.github.io/intern/#option-tunnel> for built-in options
-	tunnel: 'BrowserStackTunnel',
-
-	tunnelOptions: {
-        username: 'laurabaakman1',
-        accessKey: 'ueBzwbvpSAczraKWLkEo'
-    },
+	tunnel: 'NullTunnel',
 
 	// Configuration options for the module loader; any AMD configuration options supported by the AMD loader in use
 	// can be used here.
@@ -43,7 +38,7 @@ define({
 	// <https://theintern.github.io/intern/#option-useLoader> for instruction
 	loaderOptions: {
 		// Packages that should be registered with the loader in each testing environment
-		packages: [ { name: 'myPackage', location: '.' } ]
+		packages: [ /*{ name: 'myPackage', location: '.' }*/ ]
 	},
 
 	// Non-functional test suite(s) to run in each browser
