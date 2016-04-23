@@ -1,7 +1,5 @@
-define(function (require) {
-    var registerSuite = require('intern!object');
-    var assert = require('intern/chai!assert');
-    var math = require('app/math');
+define(['intern!object', 'intern/chai!assert', 'app/math'],
+  function (registerSuite, assert, math) {
 
     registerSuite({
         name: 'math',
