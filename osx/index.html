@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script data-main="app/main" src="lib/require.js"></script>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <h1> Hi, <span id='name'> </span> </h1>
+
+    <form id="loginForm">
+			<input id="nameField" type="text" placeholder="Your name">
+			<input type="submit" value="Submit">
+		</form>
+
+  </body>
+</html>

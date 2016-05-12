@@ -1,0 +1,37 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "pretest": "chromedriver --port=4444 --url-base=wd/hub 1> /dev/null & ./node_modules/jshint/bin/jshint ./tests/*.js && ./node_modules/jshint/bin/jshint ./app/*.js",
+    "test": "./node_modules/.bin/intern-runner config=tests/internLocal",
+    "posttest": "pkill chromedriver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-quick-start.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/electron/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "electron-prebuilt": "^0.37.0",
+    "intern": "^3.1.1",
+    "jshint": "^2.9.2"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
