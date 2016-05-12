@@ -5,9 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "pretest": "chromedriver --port=4444 --url-base=wd/hub 1> /dev/null & ./node_modules/jshint/bin/jshint ./tests/*.js && ./node_modules/jshint/bin/jshint ./app/*.js",
-    "test": "./node_modules/.bin/intern-runner config=tests/internLocal",
-    "posttest": "echo 'Hallo!' && pkill chromedriver"
+    "pretest": "jshint ./tests/*.js && jshint ./app/*.js",
+    "test": "intern-runner config=tests/internLocal",
+    "posttest": ""
   },
   "repository": {
     "type": "git",
