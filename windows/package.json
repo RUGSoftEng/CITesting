@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "pretest": "jshint ./tests/*.js && jshint ./app/*.js",
-    "test": "intern-runner config=tests/internLocal",
+    "pretest": "jshint ./tests && jshint ./app",
+    "test": "intern-client config=tests/internLocal",
     "posttest": ""
   },
   "repository": {
